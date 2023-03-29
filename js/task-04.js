@@ -25,3 +25,4 @@ minusBtn.addEventListener("click",function(){
   console.log(counter)
   valueEl.textContent = counter.counterValue;
 });
+
