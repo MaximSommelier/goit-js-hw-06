@@ -7,15 +7,17 @@ const alert = `Усі поля мають бути заповені!`
 
 function onSubmit(event){
     event.preventDefault();
-    
     const {email, password} = event.currentTarget.elements;
+    if (email || password  === ""){
+        console.log(alert);
+    } else {
     const dataUser ={
         email: email.value,
         password: password.value,    
     }
     console.log(dataUser)
-    if (email || password  === ""){
-        console.log(alert)
     }
     document.onSubmit('form').reset();
 };
+
+// Я ХЗ как правильно сделать((
