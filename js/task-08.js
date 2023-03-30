@@ -1,6 +1,7 @@
 const form = document.querySelector('.login-form');
-// const email = document.querySelector('email');
-// const password = document.querySelector('password');
+const email = document.querySelector('input[name="email"\]');
+const password = document.querySelector('input[name="password"\]');
+// ДИВНИЙ СИТАКСИС, НЕ ПАМЯТАЮ ТАКОГО НА ЛЕКЦІЯХ, АЛЕ ОК, ДЯКУЮ))
 
 form.addEventListener('submit', onSubmit);
 
