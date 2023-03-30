@@ -4,6 +4,6 @@ console.log(spanTextSize)
 rangeEl.addEventListener('input', changeFontSize);
 
 function changeFontSize(event){
-spanTextSize.style.fontSize = event.currentTarget.valueAsNumber;
-console.log(event.currentTarget.valueAsNumber)
+spanTextSize.style.fontSize = event.currentTarget.value +'px';
+console.log(event.currentTarget.value)
 };

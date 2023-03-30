@@ -3,13 +3,13 @@ const form = document.querySelector('.login-form');
 // const password = document.querySelector('password');
 
 form.addEventListener('submit', onSubmit);
-const alert = `Усі поля мають бути заповені!`
+
 
 function onSubmit(event){
     event.preventDefault();
     const {email, password} = event.currentTarget.elements;
-    if (email || password  === ""){
-        console.log(alert);
+    if (!email || !password){
+        alert ("Усі поля мають бути заповені!");
     } else {
     const dataUser ={
         email: email.value,
@@ -17,7 +17,6 @@ function onSubmit(event){
     }
     console.log(dataUser)
     }
-    document.onSubmit('form').reset();
+    event.currentTarget.reset();
 };
 
-// Я ХЗ как правильно сделать((

@@ -2,6 +2,7 @@ const input = document.querySelector('#validation-input');
 const dataLength = input.getAttribute('data-length');
 
 input.addEventListener('blur', checkTextLength);
+input.addEventListener('input', clearInput);
 
 
 function checkTextLength(event){
@@ -10,6 +11,11 @@ function checkTextLength(event){
 } else {
    input.classList.add("valid")
 }
+};
+
+function clearInput(event){
+   input.classList.remove("invalid")
+   input.classList.remove("valid")
 };
 
 // console.log(dataLength)

@@ -6,8 +6,8 @@ const textDefault = 'Anonimus';
 
 function checkInput (evt){
     console.log(evt.currentTarget.value)
-    if (evt.currentTarget.value === "" ){
+    if (!evt.currentTarget.value){
         output.textContent = textDefault;
     }
-output.textContent = evt.currentTarget.value;
+output.textContent = evt.currentTarget.value.trim();
 };
